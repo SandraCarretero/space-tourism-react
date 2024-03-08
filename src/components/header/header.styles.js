@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-	width: 100%;
-    padding: 2.0625rem 1.5rem;
+	position: absolute;
 	display: flex;
 	justify-content: space-between;
-    align-items: center;
+	align-items: center;
+	width: 100vw;
+	padding: 1.5rem;
+	margin-bottom: 3rem;
 `;
 
 export { StyledHeader };

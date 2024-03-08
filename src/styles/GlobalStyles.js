@@ -14,10 +14,8 @@ export const GlobalStyles = createGlobalStyle`
   
   body{
     margin: 0;
-    background-color: #ebebed;
-    font-family: "Barlow Condensed", sans-serif;
-    color: white;
-    text-align: center;
+    font-family: "Barlow", sans-serif;
+    color: #d0d6f9;
   }
 
   a{
@@ -31,10 +29,4 @@ export const GlobalStyles = createGlobalStyle`
     margin-bottom: 0;
     padding-left: 0;
   }  
-  p{
-    margin: 0;
-  }
-  h2{
-    margin: 0;
-  }
 `;
