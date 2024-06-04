@@ -7,13 +7,14 @@ import { SIZES } from '../../constants/sizes';
 import { StyledText } from '../../styles/texts';
 import { StyledH2 } from '../../styles/titles';
 import { StyledPageContainer } from '../pages.styles';
+import { COLORS } from '../../constants/colors';
 
 const Destination = () => {
 	const [tabActive, setTabActive] = useState(0);
 	const { DESTINATION_TABS, DESTINATION_INFO } = DESTINATION_DATA;
 	return (
 		<StyledPageContainer $bgImage='/assets/destination/background-destination-mobile.jpg'>
-			<StyledH2 $size={SIZES.l} data-number='01'>
+			<StyledH2 $color={COLORS.white} $size={SIZES.l} data-number='01'>
 				PICK YOUR DESTINATION
 			</StyledH2>
 			<DestinationImage
@@ -25,15 +26,15 @@ const Destination = () => {
 				tabActive={tabActive}
 				setTabActive={setTabActive}
 			/>
-			<StyledH2 $size={SIZES.xxl}>{DESTINATION_INFO[tabActive].title}</StyledH2>
+			<StyledH2 $font={FONTS_FAMILY.main} $color={COLORS.white} $size={SIZES.xxl}>{DESTINATION_INFO[tabActive].title}</StyledH2>
 			<StyledText>{DESTINATION_INFO[tabActive].text}</StyledText>
 			<hr />
 			<StyledH2 $size={SIZES.xs}>AVG. DISTANCE</StyledH2>
-			<StyledText $size={SIZES.xl} $font={FONTS_FAMILY.main}>
+			<StyledText  $color={COLORS.white} $size={SIZES.xl} $font={FONTS_FAMILY.main}>
 				{DESTINATION_INFO[tabActive].avgDistance}
 			</StyledText>
 			<StyledH2 $size={SIZES.xs}>Est. travel time</StyledH2>
-			<StyledText $size={SIZES.xl} $font={FONTS_FAMILY.main}>
+			<StyledText  $color={COLORS.white} $size={SIZES.xl} $font={FONTS_FAMILY.main}>
 				{DESTINATION_INFO[tabActive].travelTime}
 			</StyledText>
 		</StyledPageContainer>
